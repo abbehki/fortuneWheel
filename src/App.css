@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f6f4;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  border: 3px solid black;
+  padding: 10px;
 }
 
 .App-logo {
@@ -35,4 +45,117 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+button {
+  background: none;
+}
+
+#spin{
+  margin-top: 10px;
+  position: absolute;
+  background-color: #ffdda1;
+  z-index: 1;
+  font-size: 20px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+#spin:hover {
+  color: white
+}
+
+#spin:focus,
+#reset:focus {
+  outline: none;
+}
+
+/* #reset {
+  position: absolute;
+  bottom: 20vh;
+  right: 35vw;
+} */
+/* 
+#reset:hover {
+  color: red;
+  border-color: red;
+} */
+
+#readout {
+  position: absolute;
+}
+.wheel-rotator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#selector {
+  position: absolute;
+  top:7rem;
+  font-size: 40px;
+  z-index: 1;
+  color: #ffdda1;
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-50deg);
+  }
+}
+#result {
+  font-size: 10px;
+}
+
+input {
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#myProgress {
+  position: static;
+  width: 300px;
+  background-color: grey;
+}
+
+#myBar {
+  /* width: 70%; */
+  height: 30px;
+  background-color: green;
+}
+
+.header-reward{
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-reward > span{
+  font-size: 22px;
+  margin-right: 10px;
+  font-weight: 900;
+}
+.card-view{
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.have-question > span{
+  color: #fac14e;
+  margin-left: 2px;
 }
